@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Massive Texting</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+	<script src="https://unpkg.com/vue"></script>
+	<script src="./js/generalCard.js"></script>
+	<style>
+		.messa {
+			height: 80px;
+			width: 80px;
+			display: inline-block;
+			text-align: center;
+			line-height: 80px;
+			font-size: 0px;
+			color: #222222;
+			margin-bottom: 30px;
+		}
+
+		.messa-icon {
+			height: 80px;
+			width: 80px;
+			display: inline-block;
+			text-align: center;
+			line-height: 80px;
+			font-size: 60px;
+			color: #222222;
+			margin-bottom: 30px;
+		}
+
+		.personal {
+			scroll-padding-left: 120px;
+			scroll-padding-left: 120px;
+			margin-bottom: 30px;
+		}
+
+		.pad {
+			padding-left: 12px;
+			padding-left: 12px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+		.trans {
+
+			display: flex;
+			justify-content: center;
+		}
+
+		.mrg {
+			margin: auto !important;
+		}
+
+		.pp {
+			width: 480px !important;
+			color: #222222;
+		}
+
+		.btn-link {
+			color: #222222;
+			text-rendering: auto;
+		}
+
+		.card-header {
+			width: auto;
+		}
+
+		.img-fuidm {
+
+			width: 40%;
+			height: auto;
+			text-align: center;
+		}
+
+		.img-person {
+			display: table;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.ppp {
+
+			display: inline-block;
+			width: auto;
+			padding-left: 10%;
+			padding-right: 10%;
+			word-break: break-all;
+		}
+
+		.imgalign {
+			display: block;
+			margin: auto;
+		}
+
+     /* card  */
+	.pricing-card .card-header {
+        background-color:#fff;
+        border: none;
+        text-align: center;
+
+        padding: 25px 0px;
+    }
+
+    .pricing-card .card-header {
+        text-transform: capitalize;
+    }
+
+    /* first element */
+    .pricing-plan-test ul li::before {
+        color: #000 !important;
+    }
+
+    .pricing-plan-test .card-footer .btn {
+        background-color: #000 !important;
+		border-color: #000;
+		color: #fff !important;
+		width: 100%;
+    }
+
+    .pricing-plan-test .card-footer .btn:hover {
+        background-color: #333333;
+        border-color: #333333;
+    } 
+    /*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>><< */
+
+     /* second element */
+    .pricing-plan-business ul li::before {
+        color: #0070f3 !important;
+    }
+
+    .pricing-plan-business .card-footer .btn {
+        background-color: #0070f3 !important;
+		border-color: #0070f3;
+		color: #fff !important;
+		width: 100%;
+    }
+
+    .pricing-plan-bussiness .card-footer .btn:hover {
+        background-color: #3392ff;
+        border-color: #3392ff;
+    } 
+    /*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>><< */
+
+
+     /* first element */
+    .pricing-plan-enterprise ul li::before {
+        color: #ff0080 !important;
+    }
+
+    .pricing-plan-enterprise .card-footer .btn {
+        background-color: #ff0080 !important;
+		border-color: #ff0080;
+		color: #fff !important;
+		width: 100%;
+    }
+
+    .pricing-plan-enterprise .card-footer .btn:hover {
+        background-color: #ff80bf;
+        border-color: #ff80bf;
+    } 
+    /*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>><< */
+
+    .pricing-card .card-header h2 {
+        color: inherit;
+        font-size: 2.25rem;
+        font-weight: 600;
+        margin: auto;
+    }
+
+    .pricing-card .card-footer button {
+        font-weight: 400;
+        height: 50px !important;
+    }
+
+    .pricing-card .card-footer p {
+        color: inherit;
+        line-height: 1.5;
+        font-size: 2.25rem;
+        letter-spacing: -0.049375rem;
+        font-weight: 600;
+        margin: 0px;
+
+        padding-bottom: 10px;
+    }
+    
+    .pricing-card .card-footer .tag {
+        color: #666;
+        padding-left: 3px;
+        font-size: 70%;
+        font-weight: 400;
+    }
+
+    .pricing-card .card-footer {
+        text-align: center;
+    }
+
+    .pricing-card .card-body ul li::before {
+        content: "\f058";
+
+        font-family: FontAwesome;
+        display: inline-block;
+        font-size: 20px;
+
+        margin-right: 7px;
+    }
+
+    .pricing-card .card-body ul {
+        list-style: none;
+        padding: 0;
+    }
+
+
+	</style>
+</head>
+
+<body>
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container box_1620">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo-t.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-center">
+							<li class="nav-item active"><a class="nav-link" href="index.html#features">Features</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.html#review">Review</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+							<li class="nav-item active"><a class="nav-link" href="contact.html">contact</a></li>
+							<li class="nav-item active"><a class="nav-link" href="http://ec2-3-83-101-27.compute-1.amazonaws.com:3000/login">Sign In</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item"><a href="http://ec2-3-83-101-27.compute-1.amazonaws.com:3000/register" class="tickets_btn">Sign
+									Up</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="banner_content">
+							<h2>Text Messaging For Business Marketing</h2>
+							<p>Send your sales message cheap, easy</br> and immediately!.</p>
+							<a class="banner_btn" href="http://ec2-3-83-101-27.compute-1.amazonaws.com:3000/register">Buy Now</a>
+							<a class="banner_btn2" href="index.html#">Learn More</a>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="home_left_img">
+							<img class="img-fluid" src="img/banner/home-left-1.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Home Banner Area =================-->
+
+	<!--================Work Area =================-->
+	<section class="work_area p_120 " id="features">
+		<div class="container">
+			<div class="container w-75" style="padding-bottom: 100px;">
+				<div class="row py-3">
+					<p class="text-center m-auto display-5" style="font-size: 20px; color:#818992;">Works beautifully
+						with top CRMs:</p>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 px-3 py-4 imgalign">
+						<img width="174" height="60" src="img/element/podio.gif" class="imgalign" alt="" />
+					</div>
+					<div class="col-lg-4 px-3 py-4 imgalign">
+						<img width="250" height="35" src="img/element/investorfuse-logo.gif" class="imgalign" alt="" />
+					</div>
+					<div class="col-lg-4 px-3 py-4 imgalign">
+						<img width="174" height="80" src="img/element/rei-automation-squad-1.gif" class="imgalign"
+							alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="work_inner row">
+				<div class="col-lg-4">
+					<div class="work_item ">
+						<i class="lnr lnr-phone-handset"></i>
+						<a href="index.html#">
+							<h4>Local Phone Numbers</h4>
+						</a>
+						<p>No short codes here - MassiveTexting only uses local 10-digit long code phone numbers. You
+							choose the area code.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="work_item">
+						<i class="lnr lnr-bubble"></i>
+						<a href="index.html#">
+							<h4>Data Merge Messaging</h4>
+						</a>
+						<p>Merge individual prospect data into each unique message you send. The best part? MassiveTexting
+							is scaleable.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="work_item">
+						<i class="lnr lnr-cloud-sync"></i>
+						<a href="index.html#">
+							<h4>Litigator Scrub</h4>
+						</a>
+						<p>Automatically skip risky prospects. Our litigator database is updated every week with DNC
+							complainers and TCPA litigants.</p>
+					</div>
+				</div>
+			</div>
+			<div class="work_inner row p_120">
+				<div class="col-lg-4">
+					<div class="work_item">
+						<i class="lnr lnr-envelope"></i>
+						<a href="index.html#">
+							<h4>Vacant Property ID</h4>
+						</a>
+						<p>USPS address validation and vacant property identification. Find the vacant properties in
+							your database to focus on first.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="work_item">
+						<i class="lnr lnr-code"></i>
+						<a href="index.html#">
+							<h4>API Compatible</h4>
+						</a>
+						<p>Instantly push your lead data anywhere. Push to Podio > send a notification text to your
+							sales rep > add data to spreadsheet.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="work_item">
+						<i class="lnr lnr-link"></i>
+						<a href="index.html#">
+							<h4>SMS Relay</h4>
+						</a>
+						<p>Call and text with hot leads right from your phone. Relay masks your personal phone number
+							and allows instant communication with your hottest leads.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Work Area =================-->
+
+	<!--================Made Life Area =================-->
+	<section class="made_life_area text-center p_120">
+
+
+
+		<div class="container  main_title ">
+			<h2 style="color: #fff">Why Text Message?</h2>
+			<div class="row m-auto w-75">
+				<p style="color: #fff">You already have 5 marketing channels working well for you, why do you need another? Consider the
+					following when you compare SMS prospecting to Direct Mail or Cold Calling:</p>
+			</div>
+		</div>
+		<div class="container w-50">
+			<div class="row">
+				<div class="col-md-6  ">
+					<div class=" flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column ">
+							<h1 class="text-center mb-0 display-2" style="color: #fff">95%</h1>
+							<p class="card-text mb-auto p-2" style="color: #fff">Of all text messages are ready within 10 seconds.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 ">
+					<div class=" flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column ">
+							<h1 class="text-center mb-0 display-2" style="color: #fff">98%</h1>
+							<p class="card-text mb-auto p-2" style="color: #fff">Read rate.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 ">
+					<div class="flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column ">
+							<h1 class="text-center mb-0 display-2" style="color: #fff">30%</h1>
+							<p class="card-text mb-auto p-2" style="color: #fff">Response rate</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 ">
+					<div class="flex-md-row mb-4 box-shadow h-md-250">
+						<div class="card-body d-flex flex-column ">
+							<h1 class="text-center mb-0 display-2" style="color: #fff">10x</h1>
+							<p class="card-text mb-auto p-2" style="color: #fff">Cheaper than any other cost per load.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="img-fluid pad" src="img/banner/home-left-1.png" alt="">
+
+	</section>
+	<!--================End Made Life Area =================-->
+
+
+
+
+
+	<!--================Work Area =================-->
+	<section class="work_area p_120">
+		<div class="container">
+			<div class="row pb-5 ">
+				<div class="main_title m-auto">
+					<h2 class="col-lg-12">Need phone numbers? Premium Skip Trace.</h2>
+					<p class="col-lg-12">MassiveTexting customers receive integrated premium skip tracing at the best
+						prices available without a
+						subscription. We only offer top quality data, with pricing as low as $0.15 per record.
+					</p></br>
+					<div class=" px-4 m-auto" style="width: 65%;">
+						
+					<div class="pb-3"><button type="button" class="btn btn-outline-dark col-lg-12">Voice Broadcasting?</button></div>
+					<div class="pb-3"><button type="button" class="btn btn-outline-dark col-lg-12 ">Need THE BEST Lists </br>with phone numbers?</button></div>
+					<div class="pb-3"><button type="button" class="btn btn-outline-dark col-lg-12">Need skip tracing?</button></div>
+				</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 pad">
+					<div class="row">
+						<div style="height: 350px;">
+							<div class="card-body">
+								<div class="row personal">
+									<div class="m-0 messa-icon mrg"><i class="fa fa-flash"></i></div>
+								</div>
+								<h5 class="card-title text-center">Instant Delivery</h5>
+								<p class="card-text ppp">Submit your file and our system goes to work processing it
+									immediately. Fastest delivery available, guaranteed.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 pad">
+					<div class="row">
+						<div class="card" style="height: 350px;">
+							<div class="card-body">
+								<div class="row personal">
+									<div class="m-0 messa-icon mrg"><i class="fa fa-group"></i></div>
+								</div>
+								<h5 class="card-title text-center">Duplicate Check</h5>
+								<p class="card-text ppp">Skip tracing large batches? MassiveTexting checks for prospects
+									you have already searched, and does not charge for data you already own.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 pad">
+					<div class="row">
+						<div class="card" style="height: 350px;">
+							<div class="card-body">
+								<div class="row personal">
+									<div class="m-0 messa-icon mrg"><i class="fa fa-money"></i></div>
+								</div>
+								<h5 class="card-title text-center">Only Pay for Hits</h5>
+								<p class="card-text ppp">Other skip tracing services charge you for every search, even
+									if no results are returned. MassiveTexting only charges for positive hits - search LLC
+									and trust owners with no risk.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 pad">
+					<div class="row">
+						<div class="card" style="height: 350px;">
+							<div class="card-body">
+								<div class="row personal">
+									<div class="m-0 messa-icon  mrg "><i class="fa fa-mortar-board"></i></div>
+								</div>
+								<h5 class="card-title text-center">Top Quality Data</h5>
+								<p class="card-text ppp">MassiveTexting's data is as good or better than the top data
+									providers out there - the "3 letter" companies have nothing on us!</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="price_area ">
+		<div class="container">
+			<div class="main_title">
+				<p>Ready to use the best skip trace system in the world? Use invite code “skip MassiveTexting” and get
+					started NOW!</p>
+				<div class="text-center pad"><button type="button"
+						class=" btn btn-primary btn-lg btn-responsive btninter centrado ">Skip Trace Now!</button></div>
+			</div>
+
+		</div>
+		
+	</section>
+	<!--================End Work Area =================-->
+
+
+	<!--================Price Area =================-->
+	<section class="price_area p_120 ">
+		<div class="container">
+			<div class="main_title">
+				<h2>Massive Texting Pricing</h2>
+				<p>MassiveTexting is currently in Public Beta, and we are selectively adding experienced investors to the
+					system every week. If you have a marketing budget, are regularly closing deals, and can commit to at
+					least 90 days of service, we want to speak with you!</p>
+			</div>
+			<div id="pricings" class="container">
+
+				<div class="row">
+					<div v-for="plan in plans" class="col">
+						<div  :class=plan.class >
+							<div class="card-header"><h2>{{ plan.name }}</h2></div>
+							<div class="card-body"style="min-height: 300px;">
+								<ul>
+									<li v-for="feature in plan.description.features">
+										{{ feature }}
+									</li>
+								</ul>
+							</div>
+							<div class="card-footer" >
+								<p v-if="plan.price !== 0">
+									<span>${{ plan.price }} </span>
+									<span class="tag"> /{{ plan.description.frecuency }}</span>
+								</p>
+								<p v-if="plan.price === 0">
+									<span style="text-transform:capitalize;" class="tag"> {{ plan.description.frecuency }}</span>
+								</p>
+								<button class="btn" name="test" variant="dark" block>Get Started</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+		
+	</section>
+	<!--================End Price Area =================-->
+
+	<!--================Testimonials Area =================-->
+	<section class="testimonials_area p_120" id="review">
+		<div class="container">
+			<div class="main_title" >
+				<h2 style="color: #fff">Our users us!</h2>
+				<p style="color: #fff">Check out what our users have to say about MassiveTexting:</p>
+			</div>
+			<div class="testi_slider owl-carousel">
+				<div class="item">
+					<div class="testi_item">
+						<div class="media">
+							<div class="d-flex">
+								<img src="./img/testimonials/testi-1.png" alt="">
+							</div>
+							<div class="media-body">
+								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
+									printer, scanner, speaker, projector, hardware.</p>
+								<h4>Mark Alviro Wiens</h4>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testi_item">
+						<div class="media">
+							<div class="d-flex">
+								<img src="./img/testimonials/testi-2.png" alt="">
+							</div>
+							<div class="media-body">
+								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
+									printer, scanner, speaker, projector, hardware.</p>
+								<h4>Mark Alviro Wiens</h4>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testi_item">
+						<div class="media">
+							<div class="d-flex">
+								<img src="./img/testimonials/testi-1.png" alt="">
+							</div>
+							<div class="media-body">
+								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
+									printer, scanner, speaker, projector, hardware.</p>
+								<h4>Mark Alviro Wiens</h4>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testi_item">
+						<div class="media">
+							<div class="d-flex">
+								<img src="./img/testimonials/testi-2.png" alt="">
+							</div>
+							<div class="media-body">
+								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
+									printer, scanner, speaker, projector, hardware.</p>
+								<h4>Mark Alviro Wiens</h4>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testi_item">
+						<div class="media">
+							<div class="d-flex">
+								<img src="./img/testimonials/testi-1.png" alt="">
+							</div>
+							<div class="media-body">
+								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
+									printer, scanner, speaker, projector, hardware.</p>
+								<h4>Mark Alviro Wiens</h4>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testi_item">
+						<div class="media">
+							<div class="d-flex">
+								<img src="./img/testimonials/testi-2.png" alt="">
+							</div>
+							<div class="media-body">
+								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
+									printer, scanner, speaker, projector, hardware.</p>
+								<h4>Mark Alviro Wiens</h4>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Testimonials Area =================-->
+
+	<!--================Made Life Area =================-->
+	<section class="made_life_area made_white p_120" style="padding-bottom: 0px;" id="faq">
+		<div class="container">
+			<div class="made_life_text " style="margin: auto; text-align: center; color: #222222;">
+				<h3>Frequently Asked Questions</h3>
+				<p>Some questions we often get asked are answered below!</p>
+			</br></div>
+			</div>
+			<div class="made_life_inner">
+				<div class="row made_life_text " style="height: 400px;">
+					
+					<div class="col-sm-6" style="margin: auto; text-align: center;">
+
+						<div class="accordion" id="accordionExample">
+
+							<div class="card panel panel-default">
+								<div class="card-header" id="headingOne panel-heading">
+									<h5 class="panel-title btn-link">
+										<a class="collapsed" data-toggle="collapse" data-target="#collapseOne"
+											aria-expanded="true" aria-controls="collapseOne">
+											<strong>How is this compliant? I thought permission was required...</strong>
+										</a>
+
+									</h5>
+								</div>
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+									data-parent="#accordionExample">
+									<div class="card-body">
+										Our attorneys have thoroughly reviewed MassiveTexting, and they believe the system
+										is compliant as the laws are currently written for two reasons: 1. We are not
+										selling or advertising any goods or services, so the vast majority of the law
+										does not apply to our texts. 2. MassiveTexting is NOT an ATDS. Consent to contact
+										is not required because MassiveTexting is not an auto-dialer.
+									</div>
+								</div>
+							</div>
+							<div class="card z-depth-0 bordered">
+								<div class="card-header" id="headingTwo">
+									<h5 class="mb-0 btn-link">
+										<a class="collapsed" data-toggle="collapse" data-target="#collapseTwo"
+											aria-expanded="true" aria-controls="collapseTwo">
+											<strong>Can I still get sued?</strong>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+									data-parent="#accordionExample">
+									<div class="card-body">
+										Absolutely. But we've done everything we can to mitigate that risk by pruning
+										out litigious prospects before you message them, and we've built the system to
+										be compliant with the law. We have never had a user penalized for using our
+										system - has a 100% clean track record.
+									</div>
+								</div>
+							</div>
+							<div class="card z-depth-0 bordered">
+								<div class="card-header" id="headingThree">
+									<h5 class="mb-0 btn-link">
+										<a class="collapsed" data-toggle="collapse" data-target="#collapseTree"
+											aria-expanded="true" aria-controls="collapseTree">
+											<strong>How much does it cost?</strong>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseTree" class="collapse" aria-labelledby="headingTree"
+									data-parent="#accordionExample">
+									<div class="card-body ">
+										Your MassiveTexting membership will be charged on a subscription basis with
+										renewals every 30 days. We have two subscription levels: Our Mid-Market plan is
+										$500 a month, and our Large-Market plan is $1000 a month. To request access to
+										MassiveTexting, schedule a time for a brief phone call at the top of this page.
+									</div>
+								</div>
+							</div>
+							<div class="card z-depth-0 bordered">
+								<div class="card-header" id="headingFour">
+									<h5 class="mb-0 btn-link">
+										<a class="collapsed" data-toggle="collapse" data-target="#collapseFour"
+											aria-expanded="true" aria-controls="collapseFour">
+											<strong>What information will I receive from MassiveTexting's Skip Trace?</strong>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+									data-parent="#accordionExample">
+									<div class="card-body">
+										There is no other skip trace system that even comes close to providing as much
+										value as this one. You'll receive: phone numbers, mailing address updates that
+										we call the "golden address," email addresses, birth date, deceased flag,
+										bankruptcy flag and relative's contact information!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Made Life Area =================-->
+
+	<!--================Impress Area =================-->
+	<section class="impress_area p_120" style="margin-top: 30px !important;">
+		<div class="container">
+			<div class="impress_inner">
+				<h2>Want to stay in touch?</h2>
+				<p>Join our mailing list to stay updated on when we go live!</p>
+				<div id="mc_embed_signup2">
+
+					<div class="row col-auto">
+						<label class="sr-only" for="inlineFormInputGroup">email</label>
+						<div class=" col input-group mb-2">
+							<div class="input-group-prepend">
+								<div class="input-group-text">@</div>
+							</div>
+							<input type="text" class="form-control" id="inlineFormInputGroup"
+								placeholder="Enter your name addresss" v-model="email">
+						</div>
+						<button type="button" class="col-sm-2 btn btn-primary mb-2" @click="sendDate">Stay in
+							touch!</button>
+					</div>
+					<span class="help is-danger" v-if="success">Very Good!</span>
+					<span class="help is-danger" v-if="empty">Enter Email!</span>
+
+
+
+
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!--================End Impress Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area p_120">
+		<div class="container">
+			<div class="row footer_inner">
+				<div class="col-lg-5 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h3>About MassiveTexting</h3>
+						</div>
+						<p>Do you want to be even more successful? Learn to love learning and growth. The more effort
+							you put into improving your skills,</p>
+					</aside>
+				</div>
+				<div class="col-lg-5 col-sm-6">
+					<aside class="f_widget news_widget">
+						<div class="f_title">
+							<h3>Newsletter</h3>
+						</div>
+						<p>Stay updated with our latest trends</p>
+						<div id="mc_embed_signup">
+							<div class="subscribe_form relative">
+								<div class="input-group d-flex flex-row">
+									<input name="EMAIL" placeholder="Enter email address"
+										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
+										v-model="email" required="email" type="email">
+									<button class="btn sub-btn" @click="sendDate"><span
+											class="lnr lnr-arrow-right"></span></button>
+									<span class="help is-danger" v-if="success">Very Good!</span>
+									<span class="help is-danger" v-if="empty">Enter Email!</span>
+								</div>
+								<div class="mt-10 info"></div>
+							</div>
+						</div>
+					</aside>
+				</div>
+				<div class="col-lg-2">
+					<aside class="f_widget social_widget">
+						<div class="f_title">
+							<h3>Follow Me</h3>
+						</div>
+						<p>Let us be social</p>
+						<ul class="list">
+							<li><a href="https://www.facebook.com/text-100632334720235/"><i
+										class="fa fa-facebook"></i></a></li>
+
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+
+	<script type="text/javascript">
+		var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
+			{ widgetcode: "af853b73194b0a86b99300664278651c7082118467e3c6c91d8e25d1e2304fa9bc9db646a48b922752aaeaad1eccac88", values: {}, ready: function () { } };
+		var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;
+		s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
+	</script>
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/mail-script2.js"></script>
+
+</body>
+
+</html>
