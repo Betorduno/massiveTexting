@@ -1,3 +1,4 @@
+const backUrl = require('./config')
 window.onload = function () {
     new Vue({
         el: '#pricings',
@@ -8,7 +9,7 @@ window.onload = function () {
             
             getDate() {
                 var req = new XMLHttpRequest();
-                req.open('GET', 'http://192.168.24.83:1337/plans', false); 
+                req.open('GET', backUrl.base_URL+'/plans', false); 
                 req.send(null);
     
                 this.plans = JSON.parse(req.responseText);
