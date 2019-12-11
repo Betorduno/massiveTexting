@@ -1,4 +1,3 @@
-const backUrl = require('./config')
 window.onload = function () {
     new Vue({
         el: '#pricings',
@@ -9,7 +8,7 @@ window.onload = function () {
             
             getDate() {
                 var req = new XMLHttpRequest();
-                req.open('GET', backUrl.base_URL+'/plans', false); 
+                req.open('GET', 'http://ec2-3-83-101-27.compute-1.amazonaws.com:1337/plans', false); 
                 req.send(null);
     
                 this.plans = JSON.parse(req.responseText);

@@ -1,1 +1,0 @@
-export const base_URL='http://192.168.24.83:1337';
