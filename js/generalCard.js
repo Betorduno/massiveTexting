@@ -8,7 +8,7 @@ window.onload = function () {
             
             getDate() {
                 var req = new XMLHttpRequest();
-                req.open('GET', 'http://192.168.24.83:1337/plans', false); 
+                req.open('GET', 'http://ec2-3-83-101-27.compute-1.amazonaws.com:1337/plans', false); 
                 req.send(null);
     
                 this.plans = JSON.parse(req.responseText);
