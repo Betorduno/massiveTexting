@@ -2,7 +2,45 @@ var i = 0;
 var txt = 'Text Messaging For Business Marketing.';
 var speed = 300;
 window.onload = function () {
+    var controller = new ScrollMagic.Controller();
+    
+    allscene('.items', '.area');
+    allscene('.items1', '.area1');
+    allscene('.items2', '.area2');
+    allscene('.items3', '.area3');
+    allscene('.items4', '.area4');
+    allscene('.items5', '.area5');
+ function allscene(clsItems, clsArea){
+    var a = TweenMax.fromTo(clsItems, 1, {
+        yPercent:100,
+        opacity:0.2,
+        ease:Power1.easeInOut
+      },
+       { yPercent:0,
+         opacity:1,
+         ease:Power1.easeInOut  
+        });
+    
+    var scene = new ScrollMagic.Scene({
+        triggerElement: clsArea,
+        trigerHook:"onEnter",
+        duration: "50%"
+        })  
+        .setTween(a)
+        .addTo(controller);
+ }
+
+
+
+// function allscene(){
+
+// }
     typeWriter();
+  
+  
+
+    // build scenes
+
     new Vue({
         el: '#pricings',
         data: {
