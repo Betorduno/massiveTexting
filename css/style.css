@@ -1,46 +1,4 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: Rocky Ahmed
-@URL: http://wethemez.com
-Author E-mail: rockybd1995@gmail.com
 
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
-/*=====================================================================
-@Template Name: HostHub Construction 
-@Author: Rocky Ahmed
-@Developed By: Rocky Ahmed
-@Developer URL: http://rocky.wethemez.com
-Author E-mail: rockybd1995@gmail.com
-
-@Default Styles
-
-Table of Content:
-01/ Variables
-02/ predefin
-03/ header
-04/ button
-05/ banner
-06/ breadcrumb
-07/ about
-08/ team
-09/ project 
-10/ price 
-11/ team 
-12/ blog 
-13/ video  
-14/ features  
-15/ career  
-16/ contact 
-17/ footer
-
-=====================================================================*/
-/*----------------------------------------------------*/
-/*font Variables*/
-/*Color Variables*/
-/*=================== fonts ====================*/
 @import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700%7CRoboto:300,400,500,700");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -64,7 +22,10 @@ body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #777777; }
+  color: #777777;
+  overflow-x: hidden;
+
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Heebo", sans-serif;
@@ -2637,14 +2598,15 @@ h6 {
     height: 80px;
     width: 80px;
     border: 1px solid #eeeeee;
-    border-radius: 5px;
+    border-radius: 50px;
     background: #f9f9ff;
     display: inline-block;
     text-align: center;
     line-height: 80px;
     font-size: 30px;
     color: #222222;
-    margin-bottom: 30px; }
+    margin-bottom: 30px; 
+  }
   .work_item h4 {
     color: #222222;
     font-size: 20px;
@@ -2653,13 +2615,13 @@ h6 {
     max-width: 310px;
     margin: auto; }
   .work_item:hover i {
-    background-image: -moz-linear-gradient(0deg, #020024 0%, #020024 100%);
-    background-image: -webkit-linear-gradient(0deg, #020024 0%, #020024 100%);
-    background-image: -ms-linear-gradient(0deg, #020024 0%, #020024 100%);
+    background-image: -moz-linear-gradient(0deg, #000 0%, #000 100%);
+    background-image: -webkit-linear-gradient(0deg, #000 0%, #000 100%);
+    background-image: -ms-linear-gradient(0deg, #000 0%, #000 100%);
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
     color: #fff; }
   .work_item:hover h4 {
-    color: #020024; }
+    color: #000; }
 
 /* End Work Area css
 ============================================================================================ */
@@ -2845,6 +2807,9 @@ h6 {
 /*----------------------------------------------------*/
 /* Price Area css
 ============================================================================================ */
+.price_area{
+  background-color: #020024;
+}
 .price_item {
   text-align: center;
   border: 1px solid #eeeeee;

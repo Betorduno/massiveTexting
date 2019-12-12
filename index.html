@@ -5,7 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="icon" href="img/favicon.ico" type="image/png">
 	<title>Massive Texting</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -22,7 +22,72 @@
 	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
 	<script src="https://unpkg.com/vue"></script>
 	<script src="./js/generalCard.js"></script>
+	<script>
+		
+
+		
+	</script>
 	<style>
+		/* card questions */
+
+		.text-card {
+			width: 50%;
+			box-shadow: 0 4px 8px 0 rgb(252, 247, 247);
+			text-align: center;
+			/* padding: 40px 10px; */
+			color: #fff;
+			font-size: 15px;
+			padding:10px;
+			margin: auto;
+			text-align: center;
+
+		}
+		.b-card{
+			border: none;
+		}
+		.color-card1{
+			background-color:#000 ;;
+		}
+		.color-card2{
+			background-color:#0070f3 ;;
+		}
+		.color-card3{
+			background-color:#ff0080 ;;
+		}
+	/* <<<<<<<<<<<<<<>>>>>>>>>>>>>>> */
+			/* typewriter */
+/* .animation-text h2 { */
+
+/* font-size: 10px !important; */
+ /* white-space: nowrap; */
+ /* word-spacing: 460px; */
+ /* overflow: hidden;
+ transform: translateY(-50%); */
+/* }
+.animation-line h2{
+	animation: typewriter 4s steps(70) 0.5s 1 ,
+    blinkTextCursor 500ms steps(70) infinite normal;
+} */
+/* @keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 10em;
+      }
+} */
+
+/* @keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+} */
+
+		
+/* >>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<< */
 		.messa {
 			height: 80px;
 			width: 80px;
@@ -249,8 +314,8 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-center">
 							<li class="nav-item active"><a class="nav-link" href="index.html#features">Features</a></li>
-							<li class="nav-item active"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
-							<li class="nav-item active"><a class="nav-link" href="index.html#review">Review</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.html#price">Pricing</a></li>
+							<!-- <li class="nav-item active"><a class="nav-link" href="index.html#review">Review</a></li> -->
 							<li class="nav-item active"><a class="nav-link" href="index.html#faq">FAQ</a></li>
 							<li class="nav-item active"><a class="nav-link" href="contact.html">contact</a></li>
 							<li class="nav-item active"><a class="nav-link" href="http://ec2-3-83-101-27.compute-1.amazonaws.com:3000/login">Sign In</a></li>
@@ -273,9 +338,14 @@
 				<div class="row">
 					<div class="col-lg-5">
 						<div class="banner_content">
-							<h2>Text Messaging For Business Marketing</h2>
+							<div style="height: 6em ;">
+								<h2 id="writer"></h2>
+							</div>
+						</br>
 							<p>Send your sales message cheap, easy</br> and immediately!.</p>
-							<a class="banner_btn" href="http://ec2-3-83-101-27.compute-1.amazonaws.com:3000/register">Buy Now</a>
+							
+							
+							<a class="banner_btn" href="index.html#price">Buy Now</a>
 							<a class="banner_btn2" href="index.html#">Learn More</a>
 						</div>
 					</div>
@@ -293,7 +363,7 @@
 	<!--================Work Area =================-->
 	<section class="work_area p_120 " id="features">
 		<div class="container">
-			<div class="container w-75" style="padding-bottom: 100px;">
+			<!-- <div class="container w-75" style="padding-bottom: 100px;">
 				<div class="row py-3">
 					<p class="text-center m-auto display-5" style="font-size: 20px; color:#818992;">Works beautifully
 						with top CRMs:</p>
@@ -310,11 +380,11 @@
 							alt="" />
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="work_inner row">
 				<div class="col-lg-4">
 					<div class="work_item ">
-						<i class="lnr lnr-phone-handset"></i>
+						<i class="lnr lnr-phone-handset" ></i>
 						<a href="index.html#">
 							<h4>Local Phone Numbers</h4>
 						</a>
@@ -343,7 +413,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="work_inner row p_120">
+			<div class="work_inner row pt-4 pb-5">
 				<div class="col-lg-4">
 					<div class="work_item">
 						<i class="lnr lnr-envelope"></i>
@@ -441,22 +511,41 @@
 	<!--================Work Area =================-->
 	<section class="work_area p_120">
 		<div class="container">
-			<div class="row pb-5 ">
+			<div class="row  ">
 				<div class="main_title m-auto">
-					<h2 class="col-lg-12">Need phone numbers? Premium Skip Trace.</h2>
-					<p class="col-lg-12">MassiveTexting customers receive integrated premium skip tracing at the best
-						prices available without a
-						subscription. We only offer top quality data, with pricing as low as $0.15 per record.
-					</p></br>
-					<div class=" px-4 m-auto" style="width: 65%;">
+					<div class="row">
+							<div class="card b-card" >
+									<div class="card-body">
+											<h2>Need phone numbers? Premium Skip Trace.</h2>
+											<p>MassiveTexting customers receive integrated premium skip tracing at the best
+												prices available without a
+												subscription. We only offer top quality data, with pricing as low as $0.15 per record.
+											</p></br>
+									</div>
+								</div>
 						
-					<div class="pb-3"><button type="button" class="btn btn-outline-dark col-lg-12">Voice Broadcasting?</button></div>
-					<div class="pb-3"><button type="button" class="btn btn-outline-dark col-lg-12 ">Need THE BEST Lists </br>with phone numbers?</button></div>
-					<div class="pb-3"><button type="button" class="btn btn-outline-dark col-lg-12">Need skip tracing?</button></div>
-				</div>
+					</div>
+					<div class="container" >
+							
+							<div class="card row mb-1 pb-1 text-card color-card1" >
+								<div class="card-body">
+									Voice Broadcasting?
+								</div>
+							</div>
+							<div class="card row mb-1 pb-1 text-card color-card2">
+								<div class="card-body">
+										Need THE BEST Lists with phone numbers?
+								</div>
+							</div>
+							<div class="card row mb-1 pb-1 text-card color-card3">
+								<div class="card-body">
+										Need skip tracing?
+								</div>
+							</div>
+						</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" style="display: none;">
 				<div class="col-sm-6 pad">
 					<div class="row">
 						<div style="height: 350px;">
@@ -486,7 +575,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" style="display: none;">
 				<div class="col-sm-6 pad">
 					<div class="row">
 						<div class="card" style="height: 350px;">
@@ -520,7 +609,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="price_area ">
+	<section class="price_area " style="display: none;">
 		<div class="container">
 			<div class="main_title">
 				<p>Ready to use the best skip trace system in the world? Use invite code “skip MassiveTexting” and get
@@ -536,11 +625,11 @@
 
 
 	<!--================Price Area =================-->
-	<section class="price_area p_120 ">
+	<section id="price" class="price_area p_120 ">
 		<div class="container">
 			<div class="main_title">
-				<h2>Massive Texting Pricing</h2>
-				<p>MassiveTexting is currently in Public Beta, and we are selectively adding experienced investors to the
+				<h2 style="color: #fff;">Massive Texting Pricing</h2>
+				<p style="color: #fff;">MassiveTexting is currently in Public Beta, and we are selectively adding experienced investors to the
 					system every week. If you have a marketing budget, are regularly closing deals, and can commit to at
 					least 90 days of service, we want to speak with you!</p>
 			</div>
@@ -576,144 +665,7 @@
 	</section>
 	<!--================End Price Area =================-->
 
-	<!--================Testimonials Area =================-->
-	<section class="testimonials_area p_120" id="review">
-		<div class="container">
-			<div class="main_title" >
-				<h2 style="color: #fff">Our users us!</h2>
-				<p style="color: #fff">Check out what our users have to say about MassiveTexting:</p>
-			</div>
-			<div class="testi_slider owl-carousel">
-				<div class="item">
-					<div class="testi_item">
-						<div class="media">
-							<div class="d-flex">
-								<img src="./img/testimonials/testi-1.png" alt="">
-							</div>
-							<div class="media-body">
-								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
-									printer, scanner, speaker, projector, hardware.</p>
-								<h4>Mark Alviro Wiens</h4>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half-o"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="testi_item">
-						<div class="media">
-							<div class="d-flex">
-								<img src="./img/testimonials/testi-2.png" alt="">
-							</div>
-							<div class="media-body">
-								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
-									printer, scanner, speaker, projector, hardware.</p>
-								<h4>Mark Alviro Wiens</h4>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half-o"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="testi_item">
-						<div class="media">
-							<div class="d-flex">
-								<img src="./img/testimonials/testi-1.png" alt="">
-							</div>
-							<div class="media-body">
-								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
-									printer, scanner, speaker, projector, hardware.</p>
-								<h4>Mark Alviro Wiens</h4>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half-o"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="testi_item">
-						<div class="media">
-							<div class="d-flex">
-								<img src="./img/testimonials/testi-2.png" alt="">
-							</div>
-							<div class="media-body">
-								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
-									printer, scanner, speaker, projector, hardware.</p>
-								<h4>Mark Alviro Wiens</h4>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half-o"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="testi_item">
-						<div class="media">
-							<div class="d-flex">
-								<img src="./img/testimonials/testi-1.png" alt="">
-							</div>
-							<div class="media-body">
-								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
-									printer, scanner, speaker, projector, hardware.</p>
-								<h4>Mark Alviro Wiens</h4>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half-o"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="testi_item">
-						<div class="media">
-							<div class="d-flex">
-								<img src="./img/testimonials/testi-2.png" alt="">
-							</div>
-							<div class="media-body">
-								<p>Accessories Here you can find the best computer accessory for your laptop, monitor,
-									printer, scanner, speaker, projector, hardware.</p>
-								<h4>Mark Alviro Wiens</h4>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half-o"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Testimonials Area =================-->
+
 
 	<!--================Made Life Area =================-->
 	<section class="made_life_area made_white p_120" style="padding-bottom: 0px;" id="faq">
@@ -852,7 +804,7 @@
 	<!--================End Impress Area =================-->
 
 	<!--================Footer Area =================-->
-	<footer class="footer_area p_120">
+	<!-- <footer class="footer_area p_120">
 		<div class="container">
 			<div class="row footer_inner">
 				<div class="col-lg-5 col-sm-6">
@@ -901,7 +853,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 	<!--================End Footer Area =================-->
 
 
