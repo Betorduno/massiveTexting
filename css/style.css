@@ -2966,7 +2966,7 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: #ffffff;
   margin-bottom: 10px; }
 .social_widget .list li {
   margin-right: 17px;
@@ -2978,7 +2978,7 @@ h6 {
   .social_widget .list li:last-child {
     margin-right: 0px; }
   .social_widget .list li:hover a {
-    color: #308d11; }
+    color: #313330; }
 
 .copy_right_text {
   text-align: center;
