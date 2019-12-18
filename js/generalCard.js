@@ -1,6 +1,6 @@
 var i = 0;
 var txt = 'Text Messaging For Business Marketing.';
-var speed = 300;
+var speed = 110;
 window.onload = function () {
     var controller = new ScrollMagic.Controller();
     

@@ -259,9 +259,9 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  background-image: -moz-linear-gradient(0deg, #308d11 0%, #308d11 100%);
-  background-image: -webkit-linear-gradient(0deg, #308d11 0%, #308d11 100%);
-  background-image: -ms-linear-gradient(0deg, #308d11 0%, #308d11 100%); }
+  background-image: -moz-linear-gradient(0deg, #4bd01e 0%, #308d11  100%);
+  background-image: -webkit-linear-gradient(0deg, #4bd01e 0%, #308d11 100%);
+  background-image: -ms-linear-gradient(0deg, #4bd01e 0%, #308d11 100%); }
   .home_banner_area .banner_inner {
     width: 100%; }
     .home_banner_area .banner_inner .home_left_img {
@@ -2410,7 +2410,7 @@ h6 {
 ============================================================================================ */
 .main_btn {
   display: inline-block;
-  background-image: linear-gradient(to right, #308d11 0%, #308d11 48%, #308d11 100%);
+  background-image: linear-gradient(to right, #4bd01e 0%, #308d11 48%, #308d11 100%);
   background-size: 200% auto;
   padding: 0px 35px;
   color: #fff;
@@ -2451,7 +2451,7 @@ h6 {
 .submit_btn {
   width: auto;
   display: inline-block;
-  background-image: linear-gradient(to right, #308d11 0%, #308d11 48%, #308d11 100%);
+  background-image: linear-gradient(to right, #4bd01e 0%, #308d11 48%, #308d11 100%);
   background-size: 200% auto;
   padding: 0px 50px;
   color: #fff;
@@ -2656,9 +2656,9 @@ h6 {
       text-transform: uppercase;
       color: #222222; }
       .made_life_inner .nav.nav-tabs li a.active {
-        background-image: -moz-linear-gradient(0deg, #308d11 0%, #308d11 100%);
-        background-image: -webkit-linear-gradient(0deg, #308d11 0%, #308d11 100%);
-        background-image: -ms-linear-gradient(0deg, #308d11 0%, #308d11 100%);
+        background-image: -moz-linear-gradient(0deg, #4bd01e 0%, #308d11 100%);
+        background-image: -webkit-linear-gradient(0deg, #4bd01e 0%, #308d11 100%);
+        background-image: -ms-linear-gradient(0deg, #4bd01e 0%, #308d11 100%);
         box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
         color: #fff; }
 .made_life_inner .tab-content .tab-pane {
@@ -2862,18 +2862,18 @@ h6 {
     .price_item .price_footer .main_btn {
       padding: 0px 45px; }
   .price_item:hover .price_head {
-    background-image: -moz-linear-gradient(0deg, #308d11 0%, #308d11 100%);
-    background-image: -webkit-linear-gradient(0deg, #308d11 0%, #308d11 100%);
-    background-image: -ms-linear-gradient(0deg, #308d11 0%, #308d11 100%);
+    background-image: -moz-linear-gradient(0deg, #4bd01e 0%, #308d11 100%);
+    background-image: -webkit-linear-gradient(0deg, #4bd01e 0%, #308d11 100%);
+    background-image: -ms-linear-gradient(0deg, #4bd01e 0%, #308d11 100%);
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px; }
     .price_item:hover .price_head h4 {
       color: #fff; }
   .price_item:hover .price_footer {
-    background-image: -moz-linear-gradient(0deg, #308d11 0%, #308d11 100%);
-    background-image: -webkit-linear-gradient(0deg, #308d11 0%, #308d11 100%);
-    background-image: -ms-linear-gradient(0deg, #308d11 0%, #308d11 100%);
+    background-image: -moz-linear-gradient(0deg, #4bd01e 0%, #308d11 100%);
+    background-image: -webkit-linear-gradient(0deg, #4bd01e 0%, #308d11 100%);
+    background-image: -ms-linear-gradient(0deg, #4bd01e 0%, #308d11 100%);
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1); }
     .price_item:hover .price_footer h3 {
       color: #fff; }
