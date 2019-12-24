@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-
+	<script src="./js/reference.js"></script>
 	<script src="https://unpkg.com/vue"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
@@ -34,6 +34,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js"></script>
 	
 	<script src="./js/generalCard.js"></script>
+	
 	<style>
 		
 		/* card questions */
@@ -62,37 +63,7 @@
 		.color-card3{
 			background-color:#ff0080 ;;
 		}
-	/* <<<<<<<<<<<<<<>>>>>>>>>>>>>>> */
-			/* typewriter */
-/* .animation-text h2 { */
-
-/* font-size: 10px !important; */
- /* white-space: nowrap; */
- /* word-spacing: 460px; */
- /* overflow: hidden;
- transform: translateY(-50%); */
-/* }
-.animation-line h2{
-	animation: typewriter 4s steps(70) 0.5s 1 ,
-    blinkTextCursor 500ms steps(70) infinite normal;
-} */
-/* @keyframes typewriter {
-      from {
-            width: 0;
-      }
-      to {
-            width: 10em;
-      }
-} */
-
-/* @keyframes blinkTextCursor {
-      from {
-            border-right-color: rgba(255, 255, 255, 0.75);
-      }
-      to {
-            border-right-color: transparent;
-      }
-} */
+	/* <<<<<<<<<<<<<<>>>>>>>>>>>>>>> *
 
 		
 /* >>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<< */
@@ -310,7 +281,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container box_1620">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo-t.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="/"><img src="img/logo-t.png" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
@@ -321,16 +292,15 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-center">
-							<li class="nav-item active"><a class="nav-link" href="index.html#features">Features</a></li>
-							<li class="nav-item active"><a class="nav-link" href="index.html#price">Pricing</a></li>
-							<!-- <li class="nav-item active"><a class="nav-link" href="index.html#review">Review</a></li> -->
-							<li class="nav-item active"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+							<li class="nav-item active"><a class="nav-link" href="/#features">Features</a></li>
+							<li class="nav-item active"><a class="nav-link" href="/#price">Pricing</a></li>
+							<!-- <li class="nav-item active"><a class="nav-link" href="/#review">Review</a></li> -->
+							<li class="nav-item active"><a class="nav-link" href="/#faq">FAQ</a></li>
 							<li class="nav-item active"><a class="nav-link" href="contact.html">contact</a></li>
-							<li class="nav-item active"><a class="nav-link" href="http://ec2-3-83-101-27.compute-1.amazonaws.com:3000/login">Sign In</a></li>
+							<li class="nav-item active"><a class="nav-link"  id="login" onclick="start()">Sign In</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><a href="http://ec2-3-83-101-27.compute-1.amazonaws.com:3000/register" class="tickets_btn">Sign
-									Up</a></li>
+							<li class="nav-item"><a id="register" onclick="start()" class="tickets_btn">Sign Up</a></li>
 						</ul>
 					</div>
 				</div>
@@ -353,8 +323,8 @@
 							<p>Send your sales message cheap, easy</br> and immediately!.</p>
 							
 							
-							<a class="banner_btn" href="index.html#price">Buy Now</a>
-							<a class="banner_btn2" href="index.html#features">Learn More</a>
+							<a class="banner_btn" href="/#price">Buy Now</a>
+							<a class="banner_btn2" href="/#features">Learn More</a>
 						</div>
 					</div>
 					<div class="col-lg-7">
@@ -375,7 +345,7 @@
 				<div class="col-lg-4">
 					<div class="work_item ">
 						<i class="lnr lnr-phone-handset" ></i>
-						<a href="index.html#">
+						<a href="">
 							<h4>Local Phone Numbers</h4>
 						</a>
 						<p>No short codes here - MassiveTexting only uses local 10-digit long code phone numbers. You
@@ -385,7 +355,7 @@
 				<div class="col-lg-4">
 					<div class="work_item">
 						<i class="lnr lnr-bubble"></i>
-						<a href="index.html#">
+						<a href="/">
 							<h4>Data Merge Messaging</h4>
 						</a>
 						<p>Merge individual prospect data into each unique message you send. The best part? MassiveTexting
@@ -395,7 +365,7 @@
 				<div class="col-lg-4">
 					<div class="work_item">
 						<i class="lnr lnr-cloud-sync"></i>
-						<a href="index.html#">
+						<a href="/#">
 							<h4>Litigator Scrub</h4>
 						</a>
 						<p>Automatically skip risky prospects. Our litigator database is updated every week with DNC
@@ -407,7 +377,7 @@
 				<div class="col-lg-4">
 					<div class="work_item">
 						<i class="lnr lnr-envelope"></i>
-						<a href="index.html#">
+						<a href="/#">
 							<h4>Vacant Property ID</h4>
 						</a>
 						<p>USPS address validation and vacant property identification. Find the vacant properties in
@@ -417,7 +387,7 @@
 				<div class="col-lg-4">
 					<div class="work_item">
 						<i class="lnr lnr-code"></i>
-						<a href="index.html#">
+						<a href="/#">
 							<h4>API Compatible</h4>
 						</a>
 						<p>Instantly push your lead data anywhere. Push to Podio > send a notification text to your
@@ -427,7 +397,7 @@
 				<div class="col-lg-4">
 					<div class="work_item">
 						<i class="lnr lnr-link"></i>
-						<a href="index.html#">
+						<a href="/#">
 							<h4>SMS Relay</h4>
 						</a>
 						<p>Call and text with hot leads right from your phone. Relay masks your personal phone number
@@ -629,7 +599,7 @@
 								<p v-if="plan.price === 0">
 									<span style="text-transform:capitalize;" class="tag"> {{ plan.description.frecuency }}</span>
 								</p>
-								<button  onclick="location.href='http://ec2-3-83-101-27.compute-1.amazonaws.com:3000/register'" class="btn" name="test" variant="dark" block>Get Started</button>
+								<button  id="register" onclick="start()" class="btn" name="test" variant="dark" block>Get Started</button>
 							</div>
 						</div>
 					</div>
