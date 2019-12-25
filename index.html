@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.ico" type="image/png">
-	<title>Massive Texting</title>
+    <title>MassiveTexting.com</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -323,8 +323,8 @@
 							<p style="font-weight: bold; font-size: 25px;">Send your Sales Message Cheap, Easy</br> and Immediately using SMS or WhatsApp!</p>
 							
 							
-							<a class="banner_btn" href="/#price">Buy Now</a>
-							<a class="banner_btn2" href="/#features">Learn More</a>
+							<a class="banner_btn" href="/#price">SEE PLANS</a>
+							<a class="banner_btn2" href="/#features">FEATURES</a>
 						</div>
 					</div>
 					<div class="col-lg-7">
@@ -342,7 +342,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<center>
-					<h4 style="color: black;">Works beautifully with CRMs:</h4>
+					<h4 style="color: black;">Works beautifully with CRMs and Tools:</h4>
 					<img width="450" src="/img/logos.png" alt="">
 
 				</center>
@@ -352,9 +352,23 @@
 		
 	</section>
 
+
+
 	<!--================Work Area =================-->
 	<section class="work_area p_120 area" id="features" style="background-color: #fff;">
-		<div class="container items first-section">
+		<section>
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<center>
+						<h3 style="color: black;">Distribute and respond to customers who arrive on Whatsapp and SMS. <br> Send massive messages, alarms, invoices, news or appointments with us.</h3>
+					</center>
+				</div>
+			</div>
+		</section>
+	
+		
+		
+		<div class="container items first-section mt-5">
 			<div class="work_inner  row">
 				<div class="col-lg-4">
 					<div class="work_item ">
@@ -490,17 +504,17 @@
 					<div class="container items2 row" style="text-align: center;" >
 							
 							<div style="height: 150px;;" class="card col-md-3 mb-1 pb-1 text-card color-card1" >
-								<div class="card-body">
+								<div class="card-body" style="font-weight: bold;">
 									¿VOICE BROADCASTING?
 								</div>
 							</div>
 							<div style="height: 150px;;" class="card col-md-3 mb-1 pb-1 text-card color-card1">
-								<div class="card-body">
+								<div class="card-body" style="font-weight: bold;">
 										¿NEED THE BEST LISTS WITH PHONE NUMBERS?
 								</div>
 							</div>
 							<div style="height: 150px;;" class="card col-md-3 mb-1 pb-1 text-card color-card1">
-								<div class="card-body">
+								<div class="card-body" style="font-weight: bold;">
 									¿NEED SKIP TRACING?
 								</div>
 							</div>
@@ -604,7 +618,7 @@
 								<p v-if="plan.price === 0">
 									<span style="text-transform:capitalize;" class="tag"> {{ plan.description.frecuency }}</span>
 								</p>
-								<button  id="register" onclick="start()" class="btn" name="test" variant="dark" block>Get Started</button>
+								<a href="https://app.Massivetexting.com/register"  id="register1" class="btn btn-dark" name="test" variant="dark" block>Get Started</a>
 							</div>
 						</div>
 					</div>
@@ -622,7 +636,7 @@
 	<section class="made_life_area made_white area4 pointer p_120" style="padding-bottom: 0px;" id="faq">
 		<div class="container">
 			<div class="made_life_text " style="margin: auto; text-align: center; color: #222222;">
-				<h3>Frequently Asked Questions</h3>
+				<h1>Frequently Asked Questions</h1>
 				<p>Some questions we often get asked are answered below!</p>
 			</br></div>
 			</div>
@@ -725,7 +739,7 @@
 	<section class="impress_area p_120 " style="margin-top: 30px !important;">
 		<div class="container">
 			<div class="impress_inner">
-				<h2>Want to stay in touch?</h2>
+				<h2>¿Want to stay in touch?</h2>
 				<p>Join our mailing list to stay updated on when we go live!</p>
 				<div id="mc_embed_signup2">
 
@@ -741,8 +755,8 @@
 						<button style="background-color: white; color: black" type="button" class="col-sm-2 btn btn-primary mb-2" @click="sendDate">Stay in
 							touch!</button>
 					</div>
-					<span class="help is-danger" v-if="success">Very Good!</span>
-					<span class="help is-danger" v-if="empty">Enter Email!</span>
+					<span style="color:white" class="help is-danger" v-if="success">Great!</span>
+					<span style="color: white;" class="help is-danger" v-if="empty">Enter Email!</span>
 
 
 

@@ -11,7 +11,7 @@ new Vue({
     methods: {
         sendDate() {
             if (this.email != null && this.name != null && this.subject != null && this.msg != null) {
-                axios.post('http://ec2-18-225-31-253.us-east-2.compute.amazonaws.com:1338/contacts', this.$data)
+                axios.post('https://api.massivetexting.com/contacts', this.$data)
                     .then((response) => {
                         this.success = true;
                         this.empty = false;

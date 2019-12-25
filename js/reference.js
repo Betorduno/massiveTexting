@@ -3,6 +3,7 @@
 
      function start(){
              document.getElementById("register").href= REGISTER;
+             document.getElementById("register1").href= REGISTER;
              document.getElementById("login").href= LOGIN;
      }
     

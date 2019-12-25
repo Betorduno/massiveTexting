@@ -10,7 +10,7 @@ new Vue({
         sendDate() {
 
             if (this.email != null) {
-                axios.post('https://app.massivetexting.com/subscriptions', this.$data)
+                axios.post('https://api.massivetexting.com/subscriptions', this.$data)
                     .then((response) => {
                         this.success = true;
                         this.email = '';
