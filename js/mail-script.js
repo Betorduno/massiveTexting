@@ -10,7 +10,7 @@ new Vue({
         sendDate() {
 
             if (this.email != null) {
-                axios.post('http://ec2-18-225-31-253.us-east-2.compute.amazonaws.com:1338/subscriptions', this.$data)
+                axios.post('https://app.massivetexting.com/subscriptions', this.$data)
                     .then((response) => {
                         this.success = true;
                         this.email = '';

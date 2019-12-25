@@ -1,6 +1,6 @@
 var i = 0;
 var txt = 'Text Messaging For Business Marketing.';
-var speed = 110;
+var speed = 100;
 window.onload = function () {
     var controller = new ScrollMagic.Controller();
     
@@ -50,7 +50,7 @@ window.onload = function () {
             
             getDate() {
                 var req = new XMLHttpRequest();
-                req.open('GET', 'http://ec2-3-83-101-27.compute-1.amazonaws.com:1337/plans', false); 
+                req.open('GET', 'https://api.massivetexting.com/plans?_sort=order:desc', false); 
                 req.send(null);
     
                 this.plans = JSON.parse(req.responseText);

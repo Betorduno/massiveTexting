@@ -104,6 +104,12 @@ button:focus {
     margin-right: 30px; }
   .header_area .menu_nav {
     width: 100%; }
+    .display-2 {
+      font-size: 5.5rem;
+      font-weight: 300;
+      font-weight: bold;
+      line-height: 2.2;
+  }
   .header_area .navbar {
     background: transparent;
     padding: 0px;
@@ -113,7 +119,8 @@ button:focus {
     .header_area .navbar .nav .nav-item {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 12px/100px "Roboto", sans-serif;
+        font: 500 17px/100px "Roboto", sans-serif;
+        cursor: pointer !important;
         text-transform: uppercase;
         color: #fff;
         padding: 0px;
@@ -259,9 +266,9 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  background-image: -moz-linear-gradient(0deg, #2d9f6e 0%, #2d9f6e  100%);
-  background-image: -webkit-linear-gradient(0deg, #2d9f6e 0%, #2d9f6e 100%);
-  background-image: -ms-linear-gradient(0deg, #2d9f6e 0%, #2d9f6e 100%); }
+  background-image: -moz-linear-gradient(0deg, #25dc19 0%, #2ca715 100%);
+  background-image: -webkit-linear-gradient(0deg, #25dc19 0%, #2ca715 100%);
+  background-image: -ms-linear-gradient(0deg, #25dc19 0%, #2ca715 100%); }
   .home_banner_area .banner_inner {
     
     width: 100%; }
@@ -278,6 +285,7 @@ button:focus {
         margin-top: 0px;
         font-size: 48px;
         font-weight: bold;
+        color: black;
         font-family: "Heebo", sans-serif;
         line-height: 54px;
         margin-bottom: 20px; }
@@ -336,6 +344,14 @@ button:focus {
   max-width: 1620px;
   margin: auto; }
 
+  .work_item i {
+    background-image: -moz-linear-gradient(0deg, #000 0%, #000 100%)!important; 
+    background-image: -webkit-linear-gradient(0deg, #000 0%, #000 100%)!important;
+    background-image: -ms-linear-gradient(0deg, #000 0%, #000 100%)!important;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1)!important;
+    color: #fff !important;
+}
+
 .banner_area {
   position: relative;
   z-index: 1;
@@ -346,6 +362,7 @@ button:focus {
     width: 100%;
     min-height: 430px;
     background: #2d9f6e;
+    background-image:-webkit-linear-gradient(0deg, #25dc19 0%, #2ca715 100%);
     z-index: 1; }
     .banner_area .banner_inner .banner_content {
       margin-top: 70px; }
@@ -2562,22 +2579,23 @@ h6 {
     border-color: #2d9f6e;
     color: #fff; }
 
-.tickets_btn {
-  display: inline-block;
-  background: #ffc016;
-  color: #263d4a;
-  font-family: "Roboto", sans-serif;
-  width: 134px;
-  font-size: 13px;
-  font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  line-height: 48px;
-  border-radius: 3px;
-  outline: none !important;
-  box-shadow: none !important;
-  text-align: center;
-  cursor: pointer;
-  transition: all 300ms linear 0s; }
+    .tickets_btn {
+      display: inline-block;
+      background: #c2ff36fc !important;
+      color: #000000 !important;
+      font-family: "Roboto", sans-serif;
+      width: 134px;
+      font-size: 13px;
+      font-weight: 500;
+      /* border: 1px solid rgba(255, 255, 255, 0.5); */
+      line-height: 48px;
+      border-radius: 3px;
+      outline: none !important;
+      box-shadow: none !important;
+      text-align: center;
+      cursor: pointer;
+      transition: all 300ms linear 0s;
+    }
   .tickets_btn:hover {
     background: #fede7f;
     color: #263d4a;
@@ -2629,7 +2647,7 @@ h6 {
 /* End Work Area css
 ============================================================================================ */
 .made_life_area {
-  background: #2d9f6e; }
+  background: #151615; }
   .made_life_area.made_white {
     background: #fff; }
 
@@ -2690,12 +2708,19 @@ h6 {
 .screen_area img {
   margin-bottom: -30px; }
 
+  .btn-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
 /* End Work Area css
 ============================================================================================ */
 /* Impress Area css
 ============================================================================================ */
 .impress_area {
-  background: #2d9f6e; }
+  background: black; }
   .impress_area .impress_inner {
     text-align: center;
     max-width: 780px;
@@ -2814,6 +2839,8 @@ h6 {
 ============================================================================================ */
 .price_area{
   background-color: #2d9f6e;
+  background-image: -webkit-linear-gradient(0deg,black 0%,black 100%);
+
 }
 .price_item {
   text-align: center;
